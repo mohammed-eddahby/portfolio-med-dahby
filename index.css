@@ -430,15 +430,25 @@ footer ul li a{
 
 body {
   background: linear-gradient(135deg, #eef2ff, #e0f7fa);
+  padding-top: 80px;
 }
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 600px) {
 
-  header {
-    padding: 1rem 2rem;
-    gap: 2rem;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .about .about-container {
@@ -460,6 +470,14 @@ body {
 
   .input-box i {
     font-size: 2.5rem;
+  }
+
+    .logo {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    top: 70px;
   }
 
 }
